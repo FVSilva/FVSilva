@@ -1,0 +1,25 @@
+Create database if not existis db_cadastro default character set utf8 defaut 1collateutf8_general_ci;
+
+CREATE TABLE if NOT EXISTS tb_clientes(
+id int AUTO_INCREMENT NOT null PRIMARY KEY,
+nome varchar(40) NOT null,
+email varchar(50) NOT null UNIQUE,
+telefone varchar(15) NOT null,
+emprego varchar(40) NOT null,
+endereco varchar(40) NOT null
+)DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+CREATE TABLE if NOT EXISTS tb_fornecedores (
+id int AUTO_INCREMENT NOT null PRIMARY KEY,
+nome varchar(40) NOT null,
+email varchar(50) NOT null UNIQUE,
+telefone varchar(15) NOT null
+)DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+CREATE TABLE if NOT EXISTS tb_produtos(
+id int AUTO_INCREMENT NOT null PRIMARY KEY,
+nome_produto varchar(40) NOT null,
+tipo_produto varchar(40) NOT null,    
+codigo_produto varchar(50) NOT null UNIQUE,
+valor varchar(15) NOT null
+)DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
