@@ -1,0 +1,167 @@
+body{
+    background-image: url(../Img/imgBody.jpg);
+}
+
+@import url('https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans');
+
+
+
+.main-login{
+    /*Vw é a porcentagem da largura da view port*/
+    width: 100vw ;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color:#fff;
+    font-size: 3vw;
+}
+
+.left-login-image{
+    width: 25vw;
+    height: 50vh;
+}
+.left-login > h2 {
+    color:#fff;
+    
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px gray;
+}
+
+.card-login > h1{
+    color: green;
+    font-weight: 800;
+    margin:0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#c5c5c5de;
+    color: black;
+    font-size: 12pt;
+    box-shadow: green;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color:green;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffffde;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: green;
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px green;
+}
+
+.btn-cadastro{
+        width: 50%;
+        padding: 16px 0px;
+        margin: 25px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: white;
+        background-color: green;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -12px green;   
+}
+
+a { 
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color: white;
+}
+
+@media only  screen and (max-widht:950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+@media only  screen and (max-widht:600px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vh;
+    }
+    .card-login{
+    width: 50%;
+    }
+}
+
