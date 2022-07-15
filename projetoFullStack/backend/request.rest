@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+Authorization: Bearer
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGViBTaWx2YSIsInVzdWFyaW8iOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2NTc4MjQ2MzksImV4cCI6MTY1NzgyNDY1OX0._VAgpGlRgJe5V5TWdbgCVCEEnnXQ1UBod4dCNsynW1Q
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "FV Silva 2",
+    "usuario": "email2@gmail.com",
+    "Password": "12345678",
+    "confPassword": "1234567"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "usuario": "email@gmail.com",
+    "Password": "123456789"
+}
+
+
+###
+GET http://localhost:5000/token 
+
+###
+DELETE http://localhost:5000/logout
